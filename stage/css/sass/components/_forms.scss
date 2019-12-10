@@ -1,0 +1,28 @@
+.feedback {
+  padding-top: 50px;
+  form {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 25px;
+    width: 600px;
+    margin: 40px auto;
+    input:not(:last-child), textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 13px;
+      padding: 10px 0 10px 30px;
+      border-radius: 25px;
+      border: 1px solid #CCC;
+      font-family: 'Montserrat', sans-serif;
+    }
+    textarea {
+      min-height: 200px;
+    }
+    input[type = "submit"] {
+      @include buttons ($ligter_blue, 10px, 45px, 18px);
+      display: block;
+      margin: auto;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}

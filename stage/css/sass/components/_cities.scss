@@ -1,0 +1,30 @@
+.cities {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .city {
+    @include main_sections_home (30px);
+    width: calc(100% / 3);
+    i {
+      position: absolute;
+      top: 170px;
+      font-size: 30px;
+      color: $grey;
+      cursor: pointer;
+    }
+    .fa-chevron-left {
+      left: -50px;
+    }
+    .fa-chevron-right {
+      right: -50px;
+    }
+    img {
+      width: 70%;
+      border-radius: 50%;
+    }
+    p {
+      color: $flat_blue;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+  }
+}

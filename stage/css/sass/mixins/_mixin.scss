@@ -1,0 +1,18 @@
+@mixin main_sections_home ($padding-top) {
+  float: left;
+  padding-top: $padding-top;
+  text-align: center;
+  position: relative;
+}
+
+@mixin buttons ($bac-color, $top-bottom, $left-right, $font-size) {
+  background-color: $bac-color;
+  border: none;
+  padding: $top-bottom $left-right;
+  color: #FFF;
+  font-size: $font-size;
+  border-radius: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}

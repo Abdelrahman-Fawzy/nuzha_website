@@ -18,3 +18,23 @@ body {
 .clear-fix {
   clear: both;
 }
+
+.line-img-top,
+.line-img-bottom {
+  position: relative;
+}
+
+.line-img-top {
+  top: 23px;
+}
+
+.line-img-bottom {
+  bottom: 23px;
+}
+
+hr {
+  height: 2px;
+  width: 80%;
+  background-color: #ededed;
+  border: 0;
+}

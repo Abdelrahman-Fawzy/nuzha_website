@@ -1,0 +1,22 @@
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h3 {
+    font-size: 16px;
+    text-align: center;
+    color: $dark_grey;
+    font-weight: normal;
+  }
+  .service {
+    @include main_sections_home (50px);
+    width: calc(100% / 2);
+    img {
+      width: 25%;
+    }
+    p {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $flat_blue;
+    }
+  }
+}

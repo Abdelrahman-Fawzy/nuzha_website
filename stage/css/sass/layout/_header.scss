@@ -1,0 +1,24 @@
+.header {
+  background: url('../images/Home/Untitled-1.png');
+  height: 800px;
+  background-size: cover;
+  .info {
+    position: relative;
+    top: 200px;
+    left: 40px;
+    p {
+      font-size: 30px;
+      text-transform: capitalize;
+      color: $dark_blue;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 16px;
+      span {
+        color: $orange;
+        font-weight: 700;
+      }
+    }
+    button {
+      @include buttons ($light_blue, 10px, 50px, 16px);
+    }
+  }
+}

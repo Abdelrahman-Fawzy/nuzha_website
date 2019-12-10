@@ -1,3 +1,20 @@
+//import variables
+@import 'sass/variables/main_colors';
+
+//import mixins;
+@import "sass/mixins/mixin";
+
+//import components
+@import "sass/components/about";
+@import "sass/components/cities";
+@import "sass/components/experiences";
+@import "sass/components/services";
+@import "sass/components/forms";
+
+//import pages
+@import "sass/pages/home";
+
 //import layout
 @import 'sass/layout/global';
+@import 'sass/layout/header';
 @import 'sass/layout/footer';

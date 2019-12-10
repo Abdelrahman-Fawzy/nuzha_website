@@ -1,0 +1,34 @@
+.about {
+  background-color: #0c3049;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+  h2 {
+    color: #FFF;
+    font-weight: 500;
+    margin-bottom: -2px;
+  }
+  img {
+    width: 100px;
+  }
+  p {
+    color: #FFF;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    span:first-of-type {
+      color: #F4A400
+    }
+    span:nth-of-type(2) {
+      color: #caad26
+    }
+    span:nth-of-type(3) {
+      color: #98ca31
+    }
+    span:nth-of-type(4) {
+      color: #41bfa9
+    }
+    span:last-of-type {
+      color: #00badf
+    }
+  }
+}

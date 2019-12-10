@@ -1,0 +1,33 @@
+.experiences {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .experience {
+    @include main_sections_home (150px);
+    width: calc(100% / 3);
+    img {
+      width: 70%;
+    }
+    .top-rated1 {
+      position: absolute;
+      left: -30px;
+      bottom: -100px;
+      width: 85%;
+    }
+    .top-rated2 {
+      position: absolute;
+      right: -30px;
+      top: 0px;
+      width: 85%;
+    }
+    p {
+      color: $flat_blue;
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-bottom: -7px
+    }
+    p:last-of-type {
+      font-size: 14px;
+      color: $dark_grey;
+    }
+  }
+}
