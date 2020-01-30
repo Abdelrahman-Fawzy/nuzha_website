@@ -16,3 +16,12 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@mixin headings ($color, $font-size) {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  color: $color;
+  font-size: $font-size;
+}

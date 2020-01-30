@@ -1,0 +1,81 @@
+.slide {
+  position: relative;
+  .carousel-indicators {
+    .active {
+      background-color: $orange;
+      border: none;
+    }
+  }
+  .item {
+    img {
+      display: block;
+      width: 100%;
+      height: 100vh;
+    }
+    .carousel-caption {
+      h1 {
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .glyphicon {
+    font-size: 40px;
+    top: 50%;
+  }
+}
+
+.contents {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  @include headings ($flat_light_blue, 25px);
+  .exper {
+    @include main_sections_home (60px);
+    width: calc(100% / 3);
+    img {
+      width: 70%;
+      border-radius: 50%;
+    }
+    p {
+      color: $flat_blue;
+      font-size: 16px;
+      text-transform: capitalize;
+      margin-bottom: -7px
+    }
+    p:last-of-type {
+      font-size: 14px;
+      color: $dark_grey;
+    }
+  }
+}
+
+.restaurants {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  @include headings ($flat_light_blue, 25px);
+  .restaurant {
+    @include main_sections_home (60px);
+    width: calc(100% / 2);
+    &::before {
+      content: '';
+      width: 85%;
+      height: 86%;
+      position: absolute;
+      top: 60px;
+      left: 42px;
+      background-color: rgba(0,0,0,0.4);
+    }
+    img {
+      width: 85%;
+    }
+    h3 {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 35%;
+      font-size: 35px;
+    }
+  }
+}

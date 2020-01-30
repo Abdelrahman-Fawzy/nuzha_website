@@ -1,6 +1,7 @@
 .experiences {
   padding-top: 50px;
   padding-bottom: 100px;
+  @include headings ($flat_light_blue, 25px);
   .experience {
     @include main_sections_home (150px);
     width: calc(100% / 3);

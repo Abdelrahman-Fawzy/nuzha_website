@@ -1,5 +1,6 @@
 .feedback {
   padding-top: 50px;
+  @include headings ($flat_light_blue, 25px);
   form {
     background-color: whitesmoke;
     padding: 20px;
