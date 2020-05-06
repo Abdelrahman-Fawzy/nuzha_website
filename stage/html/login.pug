@@ -1,0 +1,36 @@
+- var pageTitle = 'Login'
+doctype html
+html
+  head
+    include layout/meta-files
+    title #{pageTitle}
+  body
+    div(class='top')
+    div(class='container-fluid' style='margin-top:50px;')
+      div(class='col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4 logo')
+        img(src='images/forms/login.png' class='img-responsive')
+      div(class='col-md-4 col-md-offset-4  col-xs-6 col-xs-offset-3 prag')
+        p(class='lead add' style='text-align:center;') Login For NuzhaTec
+      div(class='form-container')
+        form(rol='form')
+          div(class='form-group col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1')
+            div(class='line' style='min-height:2px; background-color:#eee; margin-bottom:8px;')
+            |Email
+            input(type='text' class='form-control ')
+          div(class='form-group col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1')
+            |Password
+            input(type='text' class='form-control ' class='pass pad')
+            |Don't have an account?
+            a Sign up
+            button(type='button' class='btn btn-primary btn-block pad login') Login
+          div(class='form-group col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 text-center')
+            |or
+          div(class='form-group col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1')
+            button(type='button' class='btn btn-primary btn-block face-login') <span>f</span> Login with Facebook
+            button(type='button' class='btn btn-primary btn-block google')
+              img(src='images/forms/google.png' class='Gimg' style='width:23px; padding-right:5px;')
+              | Login with Google
+          div( class='col-xs-12 col-xs-offset-1 visible-xs-block' style='min-height:30px') 
+    img(src='images/forms/o.png' class='img-responsive' style='width:100%;')
+    include layout/footer
+    include layout/footer-scripts

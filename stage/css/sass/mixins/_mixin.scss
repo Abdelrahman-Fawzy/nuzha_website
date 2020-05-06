@@ -5,9 +5,9 @@
   position: relative;
 }
 
-@mixin buttons ($bac-color, $top-bottom, $left-right, $font-size) {
+@mixin buttons ($bac-color, $top-bottom, $left-right, $font-size, $border) {
   background-color: $bac-color;
-  border: none;
+  border: $border;
   padding: $top-bottom $left-right;
   color: #FFF;
   font-size: $font-size;
@@ -15,6 +15,7 @@
   text-transform: capitalize;
   font-weight: bold;
   cursor: pointer;
+  outline: 0;
 }
 
 @mixin headings ($color, $font-size) {

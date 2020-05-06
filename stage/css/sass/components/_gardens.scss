@@ -1,0 +1,144 @@
+.booking_garden {
+  @include buttons (transparent, 10px, 50px, 16px, #fff);
+  border: 2px solid;
+}
+
+.gardens {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .exploring {
+    @include headings ($flat_light_blue, 25px);
+    padding-bottom: 50px;
+    p {
+      color: $flat_blue;
+      font-size: 14px;
+      text-transform: capitalize;
+    }
+  }
+  .abouting {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include headings ($flat_light_blue, 25px);
+    .about_garden {
+      .info {
+        @include main_sections_home (0);
+        width: calc(94% / 3);
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 50px;
+        color: $flat_blue;
+        font-size: 14px;
+        text-transform: capitalize;
+        &:not(:last-child) {
+          margin-right: 3%;
+        }
+        i {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.booking {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .book {
+    background-color: $flat_blue;
+    padding: 50px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 65%;
+    color: #fff;
+    span {
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    form {
+      padding: 15px 0;
+      input {
+        display: block;
+        width: 48%;
+        float: left;
+        display: block;
+        width: 48%;
+        float: left;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 50px;
+        outline: 0;
+        color: $flat_blue;
+        &:first-of-type {
+          margin-right: 2%;
+          padding: 13px;
+        }
+        &:last-child {
+          width: 98%;
+          background-color: $flat_light_blue;
+          color: #fff;
+          font-size: 15px;
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .request {
+    background-color: $flat_grey;
+    padding: 50px;
+    padding-bottom: 60px;
+    border-radius: 50px;
+    margin: auto;
+    width: 65%;
+    color: $flat_blue;
+    p {
+      font-size: 17px;
+    }
+    hr {
+      border-top: 1px solid $grey;
+    }
+    .price {
+      p:first-of-type {
+        float: left;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      p:nth-of-type(2) {
+        float: right;
+        text-transform: capitalize;
+        span {
+          text-transform: uppercase;
+          color: $flat_light_blue;
+          font-weight: bold;
+        }
+      }
+    }
+    .timing {
+      float: left;
+      p:first-of-type {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+    }
+    .details {
+      float: right;
+      p:first-of-type {
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+      p:nth-of-type(2) {
+        span {
+          text-transform: uppercase;
+          margin-left: 45px;
+        }
+      }
+    }
+    button {
+      @include buttons ($flat_light_blue, 10px, 50px, 16px, none);
+      float: right;
+    }
+  }
+}

@@ -15,12 +15,13 @@
       border-radius: 25px;
       border: 1px solid #CCC;
       font-family: 'Montserrat', sans-serif;
+      outline: 0;
     }
     textarea {
       min-height: 200px;
     }
     input[type = "submit"] {
-      @include buttons ($ligter_blue, 10px, 45px, 18px);
+      @include buttons ($ligter_blue, 10px, 45px, 18px, none);
       display: block;
       margin: auto;
       font-family: 'Montserrat', sans-serif;

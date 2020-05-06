@@ -1,0 +1,22 @@
+div(id="ourslider" class="carousel slide" data-ride="carousel")
+  //indecators
+  ol(class="carousel-indicators")
+    li(data-target="#ourslider" data-slide-to="0" class="active")
+    li(data-target="#ourslider" data-slide-to="1")
+  //Wrapper for slides
+  div(class="carousel-inner" role="listbox")
+    div(class="item active")
+      img(src="images/gardens/citymax.jpg", alt="citymax-img")
+      div(class="carousel-caption")
+        h1 the botanical gardens
+        button.booking_garden book now
+    div(class="item")
+      img(src="images/ASWAN/aswan2.jpg", alt="aswan-img")
+      div(class="carousel-caption text-center")
+        h1 about aswan
+        p In recent times Aswan has become a major mining area for aluminum and iron mining. It is also a favorite place for tourists to visit due to it being a major stop for cruise boats on the River Nile as well as Lake Nasser. 
+  //controls
+  a(class="left carousel-control" href="#ourslider" role="button" data-slide="prev")
+    span(class="glyphicon glyphicon-menu-left" aria-hidden="true")
+  a(class="right carousel-control" href="#ourslider" role="button" data-slide="next")
+    span(class="glyphicon glyphicon-menu-right" aria-hidden="true")

@@ -1,0 +1,51 @@
+nav(class='navbar navbar-default')
+    div.container-fluid
+        div.navbar-header
+            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+                span(class="sr-only") Toggle navigation
+                span(class="icon-bar")
+                span(class="icon-bar")
+                span(class="icon-bar")
+            a(class="navbar-brand" href="#")
+                img(src='../images/NavBar/logo-dark.svg' class='img-responsive')
+        div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+            ul(class="nav navbar-nav")
+                li(class='wid-sm')
+                    a(href="#") 
+                        img(src="../images/NavBar/1blue.svg" width='7%')
+                        | home
+                li(class="dropdown wid-sm")
+                    a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+                        img(src="../images/NavBar/2blue.svg" width='7%')
+                        | Cities
+                        span(class="caret")
+                    ul.dropdown-menu
+                        li
+                            a(href="#") Action
+                        li
+                            a(href="#") Another action
+                        li
+                            a(href="#") Something else here
+                        li(role="separator" class="divider")
+                        li
+                            a(href="#") Separated link
+                        li(role="separator" class="divider")
+                        li
+                            a(href="#") One more separated link
+                li(class='wid-md')
+                    a(href="#")
+                        img(src="../images/NavBar/3blue.svg" width='7%')
+                        | Experiences
+                li(class='wid-lg')
+                    a(href="#")
+                        img(src="../images/NavBar/4blue.svg" width='7%')
+                        | Become a tour guide
+                li(class='wid-sm')
+                    a(href="login.html")
+                        img(src="../images/NavBar/5blue.svg" width='7%')
+                        | Login
+                li(class='btnup')
+                    a(href="signup.html" class='btn-up')
+                        |Sign up
+script(src='../js/jquery-3.2.1.min.js')
+script(src='../js/bootstrap.min.js')

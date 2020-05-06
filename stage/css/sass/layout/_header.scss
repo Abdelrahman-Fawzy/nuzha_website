@@ -18,7 +18,7 @@
       }
     }
     button {
-      @include buttons ($light_blue, 10px, 50px, 16px);
+      @include buttons ($light_blue, 10px, 50px, 16px, none);
     }
   }
 }

@@ -1,0 +1,15 @@
+- var pageTitle = 'The Botanical Gardens'
+doctype html
+html
+  head
+    include layout/meta-files
+    title #{pageTitle}
+  body
+    include components/gardens_header
+    include components/line-bottom
+    include components/garden_info
+    hr
+    include components/garden_booking
+    include components/line-top
+    include layout/footer
+    include layout/footer-scripts
