@@ -11,7 +11,7 @@ var uglify = require('gulp-uglify');
 var notify = require('gulp-notify');
 var zip = require('gulp-zip');
 
-var htmlPath = ['stage/html/**/*.pug'];
+var htmlPath = ['stage/html/*.pug'];
 var cssPath = ['stage/css/**/*.scss', 'stage/css/**/*.css'];
 var jsPath = ['stage/js/*.js']
 
@@ -52,7 +52,7 @@ gulp.task('normalcss', function () {
 
 //js task
 gulp.task('javascript', function () {
-    return gulp.src(jsPaths)
+    return gulp.src(jsPath)
         .pipe(concat('master.js'))
         .pipe(minify())
         .pipe(gulp.dest('dist/js'))
