@@ -1,0 +1,118 @@
+/*@mixin gradient($from, $to) {
+    background-color: $from;
+    background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from($form), to($to));
+    background-image: -webkit-linear-gradient($form, $to);
+    background-image: -moz-linear-gradient($form, $to);
+    background-image: -o-linear-gradient($form, $to);  
+}*/
+
+body{
+.top{
+    min-height:20px;
+    background-color:#dfa118;
+    width:100%;
+}
+.container-fluid{
+    .prag{
+        p{
+            color: $grey;
+            margin-top: 7px;
+            margin-bottom: 15px;
+        }
+    }
+    .form-container{
+        form{
+            .col-md-2{
+                @include lgScreen {
+                 padding-left: 5px;   //media query
+                 padding-right: 5px;  //media query
+                }
+            }
+            .input-fname{
+               
+                @include lgScreen {  
+                    padding-left: 15px;
+                }
+                @include mdScreen { 
+                    margin-right: 0px;
+                    padding-right: 5px;
+                    }
+                
+            }
+            .input-lname{
+                
+                @include lgScreen {
+                    padding-right: 15px;
+                    margin-left: 0px; //media query
+                }
+                @include mdScreen {
+                    padding-left: 5px;
+                    margin-left: 0px; //media query
+                }
+                @include smScreen {
+                   
+                    
+                }
+                
+                @include xsScreen {
+                   
+                }
+            }
+            
+            .form-group{
+                margin-bottom: 6px;
+                input{
+                    display: inline-block;
+                    margin-top: 6px;
+                    padding: 19px;
+                    outline: none;
+                    border-radius: 0px;
+                    box-shadow: none;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                    border-color:#dfa118;
+                }
+                }
+                button{
+                    border-radius: 0px;
+                    border: none;
+                    padding: 10px;
+                    font-size: 1.1em;
+                }
+                .pad{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .login{
+                    background-color: $ligter_blue ;
+                    margin-bottom: 0px;
+                }
+                .sign{
+                    margin-top: 5px;
+                    background-color: $orange;
+                }
+                .face-login{
+                    padding: 6px;
+                    padding-bottom: 7px;
+                    margin-bottom: 15px;
+                    span{
+                        font-size: 1.3em;
+                        font-weight: 800;
+                        display: inline-block;
+                        padding-right: 7px;
+                        
+                    }
+                }
+                .google{
+                    background-color: transparent;
+                    border: 2px solid $dark_grey;
+                    color: $dark_blue;
+                }
+            }
+
+        }
+    }
+
+}
+}
