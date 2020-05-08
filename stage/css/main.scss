@@ -6,6 +6,7 @@
 
 //import components
 @import "sass/components/about";
+@import "sass/components/registrations";
 @import "sass/components/cities";
 @import "sass/components/experiences";
 @import "sass/components/services";
@@ -19,5 +20,6 @@
 
 //import layout
 @import 'sass/layout/global';
+@import 'sass/layout/navbar';
 @import 'sass/layout/header';
 @import 'sass/layout/footer';
