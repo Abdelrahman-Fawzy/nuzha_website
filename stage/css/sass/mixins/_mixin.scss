@@ -26,3 +26,27 @@
   color: $color;
   font-size: $font-size;
 }
+
+@mixin xsScreen {
+  @media (max-width:767px) {
+    @content
+  }
+}
+
+@mixin lgScreen {
+  @media (min-width:1200px) {
+    @content
+  }
+}
+
+@mixin mdScreen {
+  @media (min-width:992px) {
+    @content
+  }
+}
+
+@mixin smScreen {
+  @media (min-width:768px) {
+    @content
+  }
+}
