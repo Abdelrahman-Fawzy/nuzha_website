@@ -2,11 +2,11 @@
     background-color:none !important;
     border-radius: 0px;
     padding-top: 0px;
-    position: fixed;
+    position: sticky;
         top:0;
         left: 0;
     .container-fluid{
-        position: fixed;
+        position: absolute;
         top:0;
         left: 0;
         padding-right: 10px;
@@ -18,7 +18,7 @@
 
         .navbar-header{
             //width:10%;
-            .navbar-toggle {}
+           // .navbar-toggle {}
             .navbar-brand{
                 //display: inline-block;
                 //margin-left: 15px;

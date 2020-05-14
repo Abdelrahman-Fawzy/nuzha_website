@@ -28,3 +28,156 @@
     }
   }
 }
+
+//become a tour guid form 
+.Theader{
+  //@include slider ($Timage);
+  div{
+    text-align: center;
+    position: absolute;
+    @include xsScreen{ 
+      top:25%;
+    }
+    @include smScreen{
+      top:35%;
+    }
+    @include mdScreen{
+      top:50%;
+    }
+    @include lgScreen{
+      top: 56%;
+    }
+  #plead{
+    color: $white;
+    margin: 0px;
+    font-weight: bolder;
+    display: block;
+    @include xsScreen{
+      font-size: 2em;
+    }
+    @include smScreen{
+      font-size: 3.2em;
+    }
+    @include mdScreen {
+      font-size: 3.7em;
+    }
+    @include lgScreen {
+      font-size: 3.9em;
+    }
+   
+  }
+ }
+}
+.container-fluid{
+  .form-content{
+    background-color: $light_grey;
+    border-radius: 9%;
+    padding: 70px 35px 30px 35px;
+    margin-top: 70px;
+    margin-bottom: 150px;
+    @include xsScreen{
+      border-radius: 6%;
+      padding: 50px 20px 10px;
+    }
+    .Th{
+      color:$orange;
+    }
+    h4{
+      text-align: center;
+      margin-bottom: 6%;
+      @include xsScreen{
+        font-size: .9999em;
+        font-weight: bold;
+      }
+    }
+    form{
+      .form-group{
+        label{
+          color:$o_blue;
+          margin-bottom: 0px;
+        }
+        .finput{
+          border-radius: 0px;
+          padding: 0px;
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          border-bottom: 1px solid $dark_grey; 
+          color:$o_blue;
+          height: 29px;
+        }
+        input{
+          @extend .finput;
+          color: $orange;
+          &:focus{
+            border-color: transparent;
+            box-shadow: none;
+            border-bottom: 1px solid $dark_grey;
+          }
+        }
+        textarea{
+          border-radius: 22px;
+          border: none;
+          box-shadow: none;
+          padding: 20px;
+          display: inline-block;
+          margin-top: 14px;
+          color: $orange;
+          &:focus{
+            box-shadow: none;
+
+          }
+        }
+        .styleClass{
+        display: inline-block;
+        border: none;
+        margin-left: 8px;
+       
+        background-color: $orange;
+        color: $white;
+        font-weight: bold;
+        outline: none;
+        border-radius: 21px;
+        @include xsScreen{
+          padding: 7px 80px;
+          margin-top: 20px;
+        }
+        @include smScreen {
+          padding: 7px 14px;
+        }
+        @include mdScreen {
+          padding: 7px 80px;
+        }
+        @include lgScreen {
+          padding: 7px 80px;
+        }
+        }
+      }
+      .photo-div{
+        @include xsScreen{
+          text-align: center;
+        }
+      }
+      .sub-div{
+        position: absolute;
+        bottom:-12%;
+        text-align: center;
+        @include xsScreen{
+          text-align: center;
+        }
+      .btn-default{
+        outline: none;
+        border: none;
+        background-color: $slight_blue;
+        color: $white;
+        font-weight: bold;
+        border-radius: 21px;
+        padding: 7px 35px;
+      }
+      @include xsScreen{
+          bottom: -8%;
+      }
+    }
+    }
+  }
+}

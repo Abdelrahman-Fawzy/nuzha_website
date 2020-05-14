@@ -1,0 +1,71 @@
+- var pageTitle = 'Become a tour guide'
+doctype html
+html
+    head
+        include layout/meta-files 
+        title #{pageTitle}
+    body
+        include layout/navbar
+        .Theader
+            block sliderTitle
+             img(src='images/service-provider/TourGuide.jpg' class='img-responsive')
+             div(class='col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1')
+                p#plead BECOME A TOUR GUIDE
+            img(src="images/footer_images/line.png" class='img-responsive' alt="line")
+        .container-fluid
+            .row   
+                div(class='form-content col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 ')
+                    h4.Th BECOME A TOUR GUIDE
+                    form(class='col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12')
+                        div(class="form-group col-xs-12")
+                            label(for='') Trip name
+                            input(type="text" class="form-control" id="" placeholder="e.g. Explore alkournish & portwfik beauty")
+                        
+                        div(class="form-group col-xs-12")
+                            label(for='') choose your city
+                            select(class="form-control" class='finput')
+                                    option() e.g Aswan
+                                    option Aswan
+                                    option Cairo
+                                    option Suez
+                                    option Alexandria
+
+                        div(class="form-group col-xs-12")
+                            label(for="") Address
+                            input(type="text" class="form-control" id="" placeholder="e.g. algish st. - alkournish")
+                        
+                        div(class="form-group col-xs-12")
+                            label(for="") Price per person
+                            input(type="text" class="form-control" id="" placeholder="e.g. 250")
+
+                        div(class="form-group col-xs-12")
+                            label(for="") Trip duration
+                            input(type="text" class="form-control" id="" placeholder="e.g. 4 hours")
+                        div(class='col-sm-12')
+                            h6.Th Starting point:
+                            div(class="form-group col-md-2 col-sm-3 col-xs-5" style='padding-left:0px')
+                                label(for="") Longitude
+                                input(type="text" class="form-control" id="" placeholder="2.453")
+
+                            div(class="form-group col-md-2 col-sm-3 col-xs-5" style='padding-left:0px')
+                                label(for="") Latitude
+                                input(type="text" class="form-control" id="" placeholder="3.567")
+
+                            div(class='col-lg-8 visible-lg-block col-md-8 visible-md-block' style='min-height: 70px;')
+                            
+                            
+                        div(class="form-group col-xs-12")
+                            label(for="") Write a brief about your picnic in 10 lines
+                            textarea(class="form-control" rows="7" style='resize:none' placeholder='write here...')
+
+                        div(class="form-group photo-div col-xs-12")
+                            label(for="") Add 5 photos or more about your picnic
+                            button(class="styleClass" onclick="document.getElementById('getFile').click()") Upload a photo
+                            input(type='file' id="getFile" style="display:none")
+
+                        div(class='sub-div col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3')
+                            button(type="submit" class="btn btn-default") Submit
+        img(src="images/footer_images/line.png" class='img-responsive' alt="line")
+        include layout/footer
+        include layout/footer-scripts
+        script(src='js/form.js')

@@ -1,34 +1,37 @@
+
+
 .cities {
   padding-top: 50px;
   padding-bottom: 50px;
   @include headings ($flat_light_blue, 25px);
-  position: relative;
-  overflow: hidden;
-  .slick-prev:before, .slick-next:before {
-  	color: #bccfde;
-  	font-size: 30px;
-  }
   .city {
-    outline: none;
-    padding-top: 50px;
+    @include main_sections_home (30px);
+    width: calc(100% / 4);
+    i {
+      position: absolute;
+      top: 170px;
+      font-size: 30px;
+      color: $grey;
+      cursor: pointer;
+    }
+    .fa-chevron-left {
+      left: -50px;
+    }
+    .fa-chevron-right {
+      right: -50px;
+    }
     img {
       width: 70%;
       border-radius: 50%;
-      margin: auto;
-    }
-    a {
-      color: $flat_blue;
-      font-size: 18px;
-      text-transform: capitalize;
-      outline: 0;
-      &:hover {
-        text-decoration: none;
-      }
     }
     p {
       color: $flat_blue;
       font-size: 18px;
       text-transform: capitalize;
+      a {
+        color: $flat_blue;
+        text-decoration: none;
+      }
     }
   }
 }

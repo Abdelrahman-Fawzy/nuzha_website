@@ -50,3 +50,9 @@
     @content
   }
 }
+
+@mixin slider ($image) {
+  background: $image;
+  height: 800px;
+  background-size: cover;
+}
