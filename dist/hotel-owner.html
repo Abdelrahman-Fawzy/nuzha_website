@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/master.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <title>Home</title>
+    <title>Become a hotel owner</title>
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -39,101 +39,67 @@
     </nav>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <div class="header">
-      <div class="container">
-        <div class="info">
-          <p>explore our <span>experiences</span><br>with  your tour guide</p>
-          <button>explore</button>
-        </div>
+    <div class="Theader"><img class="img-responsive" src="images/service-provider/HotelOwner.jpg">
+      <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <p id="plead">BECOME A HOTEL OWNER</p>
       </div>
     </div>
-    <div class="about">
-      <h2>about us</h2><img src="images/Home/linee.svg" alt="">
-      <p> <span>N</span><span>u</span><span>z</span><span>h</span><span>a</span>Tec is an online platform that provides a personal tour guide from the city locals to give a<br>tour of the city through the eyes of the locals, this tour is predetermined by the tourist or by the <br>service provider and we give recommendations for accommodations, restaurants and<br>transportation</p>
-    </div>
-    <div class="line-img-bottom"><img class="img-responsive" src="images/footer_images/line.svg" alt="line"></div>
-    <div class="cities">
-      <div class="container">
-        <h2>cities</h2>
-        <div class="slider-container">
-          <div class="city"><img src="images/Home/Aswan.jpg" alt="">
-            <p>alexandria</p>
-          </div>
-          <div class="city"><img src="images/Home/Suez.jpg" alt="">
-            <p>suez</p>
-          </div>
-          <div class="city"><a href="aswan.html"><img src="images/Home/Aswan.jpg" alt=""></a>
-            <p><a href="aswan.html">aswan</a></p>
-          </div>
-          <div class="city"><img src="images/Home/Cairo.jpg" alt="">
-            <p>cairo</p>
-          </div>
+    <div class="container-fluid">
+      <div class="row">  
+        <div class="form-content col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1 ">
+          <h4 class="Th">BECOME A HOTEL OWNER</h4>
+          <form class="col-lg-10 col-lg-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="form-group col-xs-12">
+              <label for="">Hotel name</label>
+              <input class="form-control" type="text" id="" placeholder="e.g. Red sea">
+            </div>
+            <div class="form-group col-xs-12">
+              <label for="">choose your city</label>
+              <select class="form-control finput">
+                <option>e.g Aswan</option>
+                <option>Aswan</option>
+                <option>Cairo</option>
+                <option>Suez</option>
+                <option>Alexandria</option>
+              </select>
+            </div>
+            <div class="form-group col-xs-12">
+              <label for="">Address</label>
+              <input class="form-control" type="text" id="" placeholder="e.g. Ahmed Ali st. - portawfik">
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group col-md-2 col-sm-3 col-xs-5" style="padding-left:0px">
+                <label for="">Longitude</label>
+                <input class="form-control" type="text" id="" placeholder="2.453">
+              </div>
+              <div class="form-group col-md-2 col-sm-3 col-xs-5" style="padding-left:0px">
+                <label for="">Latitude</label>
+                <input class="form-control" type="text" id="" placeholder="3.567">
+              </div>
+              <div class="col-lg-8 visible-lg-block col-md-8 visible-md-block" style="min-height: 70px;"></div>
+            </div>
+            <div class="form-group col-xs-12">
+              <label for="">Write a brief about your city and picnic in 10 lines</label>
+              <textarea class="form-control" rows="7" style="resize:none" placeholder="write here..."></textarea>
+            </div>
+            <div class="form-group photo-div col-xs-12">
+              <label for="">Add the prices list of rooms</label>
+              <button class="styleClass" onclick="document.getElementById('getFile').click()">Upload a photo</button>
+              <input type="file" id="getFile" style="display:none">
+            </div>
+            <div class="hrDiv col-xs-12" style="min-height:1px; background-color:rgb(226, 219, 219); margin-bottom:20px;"></div>
+            <div class="form-group photo-div col-xs-12">
+              <label for="">Add 5 photos or more about your picnic</label>
+              <button class="styleClass" onclick="document.getElementById('getFile').click()">Upload a photo</button>
+              <input type="file" id="getFile" style="display:none">
+            </div>
+            <div class="sub-div col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+              <button class="btn btn-default" type="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="clear-fix"></div>
-    </div>
-    <hr>
-    <div class="experiences">
-      <div class="container">
-        <h2>top-rated experiences</h2>
-        <div class="experience">
-          <div class="img"><img class="top-rated1" src="images/Home/Top-rated1.svg"><img src="images/Home/ex1.jpg" alt=""></div>
-          <div class="text">
-            <p>enjoy alnabatat island visit <br>and its beautiful view</p>
-            <p>150 LE per person</p>
-          </div>
-        </div>
-        <div class="experience">
-          <div class="img"><img src="images/Home/ex2.jpg" alt=""></div>
-          <div class="text">
-            <p>get some relaxtion in<br>kornish elsuez</p>
-            <p>200 LE per person</p>
-          </div>
-        </div>
-        <div class="experience">
-          <div class="img"><img src="images/Home/ex3.jpg" alt=""><img class="top-rated2" src="images/Home/Top-rated2.svg"></div>
-          <div class="text">
-            <p>explore abu simbel temple<br>and its hidden beauty</p>
-            <p>200 LE per person</p>
-          </div>
-        </div>
-      </div>
-      <div class="clear-fix"></div>
-    </div>
-    <hr>
-    <div class="services">
-      <div class="container">
-        <h2>other services</h2>
-        <h3>NuzhaTec can recommend you these services</h3>
-        <div class="service">
-          <div class="img"><img src="images/Home/dish.svg" alt=""></div>
-          <div class="text">
-            <p>restaurants</p>
-          </div>
-        </div>
-        <div class="service">
-          <div class="img"><img src="images/Home/hotel.svg" alt=""></div>
-          <div class="text">
-            <p>stays</p>
-          </div>
-        </div>
-      </div>
-      <div class="clear-fix"></div>
-    </div>
-    <hr>
-    <div class="feedback">
-      <div class="container">
-        <h2>give us a feedback</h2>
-        <form>
-          <input type="text" placeholder="Type your name here">
-          <input type="email" placeholder="Type your email here">
-          <input type="text" placeholder="Your subject">
-          <textarea placeholder="Your feedback"></textarea>
-          <input type="submit" value="submit">
-        </form>
-      </div>
-    </div>
-    <div class="line-img-top"><img src="images/footer_images/line.png" alt="line"></div>
+    </div><img class="img-responsive" src="images/footer_images/line.png" alt="line">
     <footer>
       <div class="container">
         <div class="content">
@@ -175,5 +141,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/master-min.js"></script>
     <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
