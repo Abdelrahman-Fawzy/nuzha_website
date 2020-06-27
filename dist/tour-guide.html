@@ -13,32 +13,44 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><img class="img-responsive" src="../images/NavBar/logo-dark.svg"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="wid-sm"><a class="chcolor" href="restaurant-owner.html"> <img src="../images/NavBar/1blue.svg" width="7%">home</a></li>
-            <li class="dropdown wid-sm"><a class="chcolor dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../images/NavBar/2blue.svg" width="7%">Cities<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider" role="separator"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider" role="separator"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-            <li class="wid-md"><a class="chcolor" href="hotel-owner.html"><img src="../images/NavBar/3blue.svg" width="7%">Experiences</a></li>
-            <li class="wid-lg"><a class="chcolor" href="tour-guide.html"><img src="../images/NavBar/4blue.svg" width="7%">Become a tour guide</a></li>
-            <li class="wid-sm"><a class="chcolor" href="login.html"><img src="../images/NavBar/5blue.svg" width="7%">Login</a></li>
-            <li class="btnup"><a class="btn-up" href="signup.html">Sign up</a></li>
-          </ul>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="row">
+            <div class="col-lg-3"><a class="navbar-brand" href="index.html"><img class="img-responsive" src="../images/NavBar/logo-dark.svg"></a></div>
+            <div class="col-lg-8 col-lg-offset-1">       
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav container">
+                  <li class="wid-sm"><a class="chcolor" href="#"> <img src="../images/NavBar/1blue.svg" width="7%">home</a></li>
+                  <li class="dropdown wid-sm"><a class="chcolor dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../images/NavBar/2blue.svg" width="7%">Cities</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider" role="separator"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider" role="separator"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li class="wid-md"><a class="chcolor" href="#"><img src="../images/NavBar/3blue.svg" width="7%">Trips</a></li>
+                  <li class="dropdown wid-lg"><a class="chcolor dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="../images/NavBar/4blue.svg" width="5%">Become a service provider</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="tour-guide.html">Become a tour guide</a></li>
+                      <li><a href="hotel-owner.html">Become a hotel owner</a></li>
+                      <li><a href="restaurant-owner.html">Become a restaurant owner</a></li>
+                    </ul>
+                  </li>
+                  <li class="wid-sm"><a class="chcolor" href="login.html"><img src="../images/NavBar/5blue.svg" width="7%">Login</a></li>
+                  <li class="btnup"><a class="btn-up" href="signup.html">Sign up</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="js/navbar.js"></script>
     <div class="Theader"><img class="img-responsive" src="images/service-provider/TourGuide.jpg">
       <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
         <p id="plead">BECOME A TOUR GUIDE</p>

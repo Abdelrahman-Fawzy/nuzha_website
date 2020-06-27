@@ -700,7 +700,6 @@ h2 {
         height: 100%;
         display: block; }
     .navbar-default .container-fluid .navbar-collapse {
-      max-width: 60%;
       float: right;
       margin-top: 55px; }
       .navbar-default .container-fluid .navbar-collapse .navbar-nav {
@@ -711,8 +710,7 @@ h2 {
         .navbar-default .container-fluid .navbar-collapse .navbar-nav li {
           border-radius: 0px;
           padding-left: 0px !important;
-          margin: 0px;
-          width: 16%; }
+          margin: 0px; }
           .navbar-default .container-fluid .navbar-collapse .navbar-nav li a {
             color: #1d3853;
             padding: 0px;
@@ -730,30 +728,26 @@ h2 {
           .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a {
             color: #1d3853;
             padding: 6px 20px; }
+        .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-lg {
+          width: 28% !important; }
+          .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-lg img {
+            width: 12% !important; }
+        .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-sm {
+          width: 14% !important; }
+          .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-sm img {
+            width: 18% !important; }
+        .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-md {
+          width: 15% !important; }
+          .navbar-default .container-fluid .navbar-collapse .navbar-nav .wid-md img {
+            width: 14% !important; }
+        .navbar-default .container-fluid .navbar-collapse .navbar-nav .btnup {
+          margin-top: -3px !important; }
 
 .navbar {
   position: relative;
   min-height: 0px !important;
   margin-bottom: 0px !important;
   border: none !important; }
-
-.wid-lg {
-  width: 25% !important; }
-  .wid-lg img {
-    width: 11% !important; }
-
-.wid-sm {
-  width: 14% !important; }
-  .wid-sm img {
-    width: 18% !important; }
-
-.wid-md {
-  width: 17% !important; }
-  .wid-md img {
-    width: 14% !important; }
-
-.btnup {
-  margin-top: -5px !important; }
 
 .header {
   background: url("../images/Home/Untitled-1.png");

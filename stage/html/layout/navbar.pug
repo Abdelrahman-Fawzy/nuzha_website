@@ -6,46 +6,60 @@ nav(class='navbar navbar-default')
                 span(class="icon-bar")
                 span(class="icon-bar")
                 span(class="icon-bar")
-            a(class="navbar-brand" href="index.html")
-                img(src='../images/NavBar/logo-dark.svg' class='img-responsive')
-        div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
-            ul(class="nav navbar-nav")
-                li(class='wid-sm')
-                    a(href="restaurant-owner.html" class ='chcolor') 
-                        img(src="../images/NavBar/1blue.svg" width='7%')
-                        | home
-                li(class="dropdown wid-sm")
-                    a(href="#"  class ="chcolor dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
-                        img(src="../images/NavBar/2blue.svg" width='7%')
-                        | Cities
-                        span(class="caret")
-                    ul.dropdown-menu
-                        li
-                            a(href="#") Action
-                        li
-                            a(href="#") Another action
-                        li
-                            a(href="#") Something else here
-                        li(role="separator" class="divider")
-                        li
-                            a(href="#") Separated link
-                        li(role="separator" class="divider")
-                        li
-                            a(href="#") One more separated link
-                li(class='wid-md')
-                    a(href="hotel-owner.html"  class ='chcolor')
-                        img(src="../images/NavBar/3blue.svg" width='7%')
-                        | Experiences
-                li(class='wid-lg')
-                    a(href="tour-guide.html"  class ='chcolor')
-                        img(src="../images/NavBar/4blue.svg" width='7%')
-                        | Become a tour guide
-                li(class='wid-sm')
-                    a(href="login.html" class ='chcolor')
-                        img(src="../images/NavBar/5blue.svg" width='7%')
-                        | Login
-                li(class='btnup')
-                    a(href="signup.html" class='btn-up')
-                        |Sign up
+            .row
+                div(class='col-lg-3')
+                    a(class="navbar-brand" href="index.html")
+                        img(src='../images/NavBar/logo-dark.svg' class='img-responsive')
+                div(class='col-lg-8 col-lg-offset-1')        
+                    div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+                        ul(class="nav navbar-nav container")
+                                li(class='wid-sm')
+                                    a(href="#" class ='chcolor') 
+                                        img(src="../images/NavBar/1blue.svg" width='7%')
+                                        | home
+                                li(class="dropdown wid-sm")
+                                    a(href="#"  class ="chcolor dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+                                        img(src="../images/NavBar/2blue.svg" width='7%')
+                                        | Cities
+                                        //- span(class="caret")
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#") Action
+                                        li
+                                            a(href="#") Another action
+                                        li
+                                            a(href="#") Something else here
+                                        li(role="separator" class="divider")
+                                        li
+                                            a(href="#") Separated link
+                                        li(role="separator" class="divider")
+                                        li
+                                            a(href="#") One more separated link
+                                li(class='wid-md')
+                                    a(href="#"  class ='chcolor')
+                                        img(src="../images/NavBar/3blue.svg" width='7%')
+                                        | Trips
+
+                                li(class="dropdown wid-lg")
+                                    a(href="#"  class ="chcolor dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+                                        img(src="../images/NavBar/4blue.svg" width='5%')
+                                        | Become a service provider
+                                        //- span(class="caret")
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="tour-guide.html") Become a tour guide
+                                        li
+                                            a(href="hotel-owner.html") Become a hotel owner
+                                        li
+                                            a(href="restaurant-owner.html") Become a restaurant owner
+
+                                li(class='wid-sm')
+                                    a(href="login.html" class ='chcolor')
+                                        img(src="../images/NavBar/5blue.svg" width='7%')
+                                        | Login
+                                li(class='btnup')
+                                    a(href="signup.html" class='btn-up')
+                                        |Sign up
 script(src='../js/jquery-3.2.1.min.js')
 script(src='../js/bootstrap.min.js')
+script(src='js/navbar.js')
